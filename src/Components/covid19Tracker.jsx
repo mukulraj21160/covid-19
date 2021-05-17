@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { makeStyles, Typography } from "@material-ui/core";
 import StateTable from "./StateTable";
-// import Card from "./Card";
 
 const useStyles = makeStyles((theme) => ({
   heading: {
@@ -43,7 +42,6 @@ const Covid19Tracker = () => {
   return (
     <div>
       <Typography className={classes.heading}>COVID-19:INDIA</Typography>
-      {/* <Card total={total} /> */}
       <StateTable data={data} total={total} />
     </div>
   );
